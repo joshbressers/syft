@@ -49,11 +49,12 @@ func TestFileMetadataCataloger(t *testing.T) {
 			path:   "/file-1.txt",
 			exists: true,
 			expected: source.FileMetadata{
-				Mode:    0644,
-				Type:    "RegularFile",
-				UserID:  1,
-				GroupID: 2,
-				Size:    7,
+				Mode:     0644,
+				Type:     "RegularFile",
+				UserID:   1,
+				GroupID:  2,
+				Size:     7,
+				MIMEType: "text/plain",
 			},
 		},
 		{
